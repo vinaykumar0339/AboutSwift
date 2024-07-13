@@ -45,7 +45,7 @@ person.updateAgeWithSelfKeyword(age: 40)
 //In the `Person` class example above, `self` is used to refer to the current instance of the class when accessing its properties or methods. Which uses to differ method parameters from instance variables
 
 //: ## `Self`
-//: The `updateAgeWithSelfKeyword` method uses `Self` as its return type. This allows the method to return an instance of the same class (`Person`) or its subclass dynamically, which is useful for method chaining and adhering to the builder pattern.
+//: The `updateAgeWithSelfKeyword` method uses `Self` as its return type. This allows the method to return an instance of the same class type (`Person`) or its subclass dynamically, which is useful for method chaining and adhering to the builder pattern.
 
 //: # Benefits of `Self` over exact Class `Person` as return type
 //: ### Drawbacks of `updateAgeWithExactClassType`
@@ -74,7 +74,7 @@ class AdvancedPerson: Person {
 
 let advancedPerson = AdvancedPerson(name: "IronMan", age: 40)
 advancedPerson.updateAgeWithExactClassType(age: 50)
-advancedPerson.updateAgeWithSelfKeyword(age: 50)
+advancedPerson.updateAgeWithSelfKeyword(age: 50).
 
 /*:
  1. `updateAgeWithExactClassType` returns `Person` as a type which won't have functionalities of the sub-class `AdvancedPerson` we can't be chaining to access methods of the `AdvancedPerson` class.
