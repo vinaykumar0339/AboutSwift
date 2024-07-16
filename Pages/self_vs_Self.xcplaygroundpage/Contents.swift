@@ -74,7 +74,7 @@ class AdvancedPerson: Person {
 
 let advancedPerson = AdvancedPerson(name: "IronMan", age: 40)
 advancedPerson.updateAgeWithExactClassType(age: 50)
-advancedPerson.updateAgeWithSelfKeyword(age: 50).
+advancedPerson.updateAgeWithSelfKeyword(age: 50)
 
 /*:
  1. `updateAgeWithExactClassType` returns `Person` as a type which won't have functionalities of the sub-class `AdvancedPerson` we can't be chaining to access methods of the `AdvancedPerson` class.
